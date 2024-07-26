@@ -1,0 +1,11 @@
+mortality <- c(542, 544, 547, 547, 560, 567, 575, 578, 580, 585, 587, 596, 597, 604, 611, 613, 620, 627, 629, 634, 637, 640, 643, 648, 649)
+hardness <- c(15, 17, 25, 27, 20, 17, 30, 22, 15, 18, 23, 19, 20, 24, 27, 21, 25, 23, 22, 30, 24, 29, 24, 25, 31)
+plot(hardness, mortality, main = "Mortality vs Hardness",
+     xlab = "Hardness", ylab = "Mortality",
+     pch = 19, col = "blue")
+model <- lm(mortality ~ hardness)
+abline(model, col = "red")
+summary(model)
+hardness_new <- data.frame(hardness = 88)
+predicted_mortality <- predict(model, hardness_new)
+predicted_mortality
