@@ -1,0 +1,15 @@
+@relation playing
+@attribute height numeric
+@attribute weight numeric
+@attribute gender {male, female}
+@data
+185, 75, male
+170, 70, female
+160, 60, female
+190, 85, male
+175, 90, male
+165, 55, female
+181, 78, male
+178, 65, female
+182, 88, male
+168, 72, female
