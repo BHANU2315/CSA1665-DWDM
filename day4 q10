@@ -1,0 +1,17 @@
+
+@relation playing
+@attribute sony{y,n}
+@attribute bpl{y,n}
+@attribute lg{y,n}
+@attribute samsung{y,n}
+@attribute onida{y,n}
+@data
+y,y,y,n,n
+n,y,n,y,n
+y,n,y,y,n
+y,y,n,y,n
+y,n,n,n,y
+n,y,n,n,y
+y,n,n,n,y
+y,y,y,n,y
+y,y,n,n,y
